@@ -25,6 +25,11 @@ export default function TestSection(){
       })
     }
 
+    function ckic()
+    {
+        alert("dick")
+    }
+
     const deleteClick = (id) => {
         //id.preventDefault()
         //const testSection = {idSection}
