@@ -24,6 +24,7 @@ export default function TestSection(){
         console.log("Раздел добавлен")
       })
     }
+    
 
     const deleteClick = (id) => {
         //id.preventDefault()
