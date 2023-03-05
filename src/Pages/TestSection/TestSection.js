@@ -24,11 +24,7 @@ export default function TestSection(){
         console.log("Раздел добавлен")
       })
     }
-
-    function ckic()
-    {
-        alert("dick")
-    }
+    
 
     const deleteClick = (id) => {
         //id.preventDefault()
