@@ -1,10 +1,9 @@
 import * as React from "react"
 import { useParams } from "react-router";
 
-export const SearchResult = ( {searchString, testSections} ) =>{
+export const SearchResult = () =>{
 
-    
-    
+    const [testSections, setTestSections] = React.useState([])
 
     return (
         <div>

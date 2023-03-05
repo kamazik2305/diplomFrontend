@@ -3,7 +3,7 @@ import { useSearchParams } from "react-router-dom"
 import { SearchForm } from "../SearchForm/SearchForm"
 import "./HeaderStyle.css"
 
-export const Header = ({ searchString, setSearchString, setTestSections }) => {
+export const Header = () => {
 
     return(
     <div className="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom site-head">
@@ -13,7 +13,7 @@ export const Header = ({ searchString, setSearchString, setTestSections }) => {
       </a>
       
         <nav className="d-inline-flex mt-0 mt-md-0 ms-md-auto navbar">
-            <SearchForm searchString={searchString} setSearchString={setSearchString} setTestSections={setTestSections} />
+            <SearchForm/>
             <a className="me-3 py-2 btn-grey text-decoration-none col align-self-center" href="/">Главная</a>
             <a className="me-3 py-2 btn-grey text-decoration-none col align-self-center" href="/test-sections">Тесты</a>
             <a className="me-3 py-2 btn-grey text-decoration-none col align-self-center" href="/about">О проекте</a>
