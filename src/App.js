@@ -11,7 +11,6 @@ import { Footer } from './Components/Footer/Footer';
 import { Test } from './Pages/Test/Test';
 import { SearchForm } from './Components/SearchForm/SearchForm';
 import { SearchResult } from './Pages/SearchResult/SearchResult';
-import { Search } from './Pages/Search/Search';
 
 function App() {
 
