@@ -1,5 +1,5 @@
 import * as React from "react"
-import { useSearchParams } from "react-router-dom"
+import { Link, useSearchParams } from "react-router-dom"
 import { SearchForm } from "../SearchForm/SearchForm"
 import "./HeaderStyle.css"
 
@@ -14,10 +14,10 @@ export const Header = () => {
       
         <nav className="d-inline-flex mt-0 mt-md-0 ms-md-auto navbar">
             <SearchForm/>
-            <a className="me-3 py-2 btn-grey text-decoration-none col align-self-center" href="/">Главная</a>
-            <a className="me-3 py-2 btn-grey text-decoration-none col align-self-center" href="/test-sections">Тесты</a>
-            <a className="me-3 py-2 btn-grey text-decoration-none col align-self-center" href="/about">О проекте</a>
-            <a className="me-3 py-2 btn-grey text-decoration-none col align-self-center" href="/registration">Регистрация</a>
+            <Link className="me-3 py-2 btn-grey text-decoration-none col align-self-center" to="/">Главная</Link>
+            <Link className="me-3 py-2 btn-grey text-decoration-none col align-self-center" to="/test-sections">Тесты</Link>
+            <Link className="me-3 py-2 btn-grey text-decoration-none col align-self-center" to="/about">О проекте</Link>
+            <Link className="me-3 py-2 btn-grey text-decoration-none col align-self-center" to="/registration">Регистрация</Link>
         </nav>
     </div>
     )

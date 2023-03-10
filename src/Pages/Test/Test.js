@@ -36,8 +36,6 @@ export const Test = () =>
     }
 
     const deleteTestClick = (id) => {
-        //id.preventDefault()
-        //const testSection = {idSection}
         fetch(`http://localhost:8090/tests/delete/${id}`, {
         method:"DELETE"
         }).then(() =>{

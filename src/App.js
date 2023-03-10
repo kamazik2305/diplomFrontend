@@ -11,6 +11,7 @@ import { Footer } from './Components/Footer/Footer';
 import { Test } from './Pages/Test/Test';
 import { SearchForm } from './Components/SearchForm/SearchForm';
 import { SearchResult } from './Pages/SearchResult/SearchResult';
+import { AddQuestion } from './Pages/AddQuestion/AddQuestion';
 
 function App() {
 
@@ -26,7 +27,8 @@ function App() {
           <Route path='/' element={<Homepage/>}/>
           <Route path='/test-sections' element={<TestSection/>}/>
           <Route path='/test-sections/:id' element={<Test/>}/>
-          <Route path='/search-result' element={<SearchResult searchString={searchString} testSections={testSections} />} />
+          <Route path='tests/:id' element={<AddQuestion/>}/>
+          {/* <Route path='/search-result' element={<SearchResult searchString={searchString} testSections={testSections} />} /> */}
           {/* <Route path='/search' element={<Search/>}/> */}
         </Routes>
       </BrowserRouter>

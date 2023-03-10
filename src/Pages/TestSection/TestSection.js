@@ -1,5 +1,6 @@
 import * as React from "react"
 import { useParams } from "react-router";
+import { Link } from "react-router-dom";
 import "./TestSectionStyle.css"
 
 export default function TestSection(){
@@ -66,8 +67,8 @@ export default function TestSection(){
                     <p>{section.testSectionTitle}</p>
                     <p>{section.id}</p>
                     <nav className="navbar">
-                        <a className="section-btn text-decoration-none"
-                        href={`/test-sections/${section.id}`} > Перейти к разделу</a>
+                        <Link className="section-btn text-decoration-none"
+                        to={`/test-sections/${section.id}`} > Перейти к разделу</Link>
                         <a className="section-btn text-decoration-none">Редактировать</a>
                         <form>
                             <button type="button" className="section-btn text-decoration-none"
