@@ -9,9 +9,6 @@ export default function TestSection(){
     const [testSections, setTestSections] = React.useState([]);
     //const {idSection} = useParams()
 
-    const[searchString, setSearchString] = React.useState('');
-    const[searchSections, setSearchSections] = React.useState([]);
-
     const addClick = (e) => {
         //e.preventDefault()
         const testSection={testSectionTitle: testSectionTitle}

@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import * as React from "react"
 
@@ -9,28 +8,26 @@ import { Homepage } from './Pages/Homepage';
 import TestSection from './Pages/TestSection/TestSection';
 import { Footer } from './Components/Footer/Footer';
 import { Test } from './Pages/Test/Test';
+<<<<<<< HEAD
 import { SearchForm } from './Components/SearchForm/SearchForm';
 import { SearchResult } from './Pages/SearchResult/SearchResult';
+=======
+>>>>>>> master
 
 function App() {
 
-  const [searchString, setSearchString] = React.useState('');
-  const [testSections, setTestSections] = React.useState([]);
-
   return (
     <>
-      
+
       <BrowserRouter>
-        <Header searchString={searchString} setSearchString={setSearchString} setTestSections={setTestSections} />
+        <Header />
         <Routes>
-          <Route path='/' element={<Homepage/>}/>
-          <Route path='/test-sections' element={<TestSection/>}/>
-          <Route path='/test-sections/:id' element={<Test/>}/>
-          <Route path='/search-result' element={<SearchResult searchString={searchString} testSections={testSections} />} />
-          {/* <Route path='/search' element={<Search/>}/> */}
+          <Route path='/' element={<Homepage />} />
+          <Route path='/test-sections' element={<TestSection />} />
+          <Route path='/test-sections/:id' element={<Test />} />
         </Routes>
       </BrowserRouter>
-      <Footer/>
+      <Footer />
     </>
   );
 }
