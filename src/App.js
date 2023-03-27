@@ -8,11 +8,7 @@ import { Homepage } from './Pages/Homepage';
 import TestSection from './Pages/TestSection/TestSection';
 import { Footer } from './Components/Footer/Footer';
 import { Test } from './Pages/Test/Test';
-<<<<<<< HEAD
-import { SearchForm } from './Components/SearchForm/SearchForm';
-import { SearchResult } from './Pages/SearchResult/SearchResult';
-=======
->>>>>>> master
+
 
 function App() {
 
