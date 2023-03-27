@@ -5,7 +5,7 @@ import * as React from "react"
 import { Header } from './Components/Header/Header';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { Homepage } from './Pages/Homepage';
-import TestSection from './Pages/TestSection/TestSection';
+import TestSection from './Pages/TestSection/TestSectionPage';
 import { Footer } from './Components/Footer/Footer';
 import { Test } from './Pages/Test/Test';
 
