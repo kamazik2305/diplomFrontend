@@ -6,6 +6,7 @@ import { Header } from './Components/Header/Header';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { Footer } from './Components/Footer/Footer';
 import TestSectionList from './Pages/TestSectionList/TestSectionList';
+import { TestList } from './Pages/TestList/TestList';
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <Header />
         <Routes>
           <Route path='test-sections' element={<TestSectionList />} />
+          <Route path='test-sections/:id' element={<TestList />} />
         </Routes>
       </BrowserRouter>
       <Footer />

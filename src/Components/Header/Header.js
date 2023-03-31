@@ -1,4 +1,5 @@
 import * as React from "react"
+import { Link } from "react-router-dom"
 import "./HeaderStyle.css"
 
 export const Header = () => {
@@ -18,10 +19,10 @@ export const Header = () => {
                         <button type="button" className="search">Начать поиск</button>
                     </div>
                 </form>
-                <a className="me-3 py-2 btn-grey text-decoration-none col align-self-center" href="/">Главная</a>
-                <a className="me-3 py-2 btn-grey text-decoration-none col align-self-center" href="/test-sections">Тесты</a>
-                <a className="me-3 py-2 btn-grey text-decoration-none col align-self-center" href="/about">О проекте</a>
-                <a className="me-3 py-2 btn-grey text-decoration-none col align-self-center" href="/registration">Регистрация</a>
+                <Link className="me-3 py-2 btn-grey text-decoration-none col align-self-center" to="/">Главная</Link>
+                <Link className="me-3 py-2 btn-grey text-decoration-none col align-self-center" to="/test-sections">Тесты</Link>
+                <Link className="me-3 py-2 btn-grey text-decoration-none col align-self-center" to="/about">О проекте</Link>
+                <Link className="me-3 py-2 btn-grey text-decoration-none col align-self-center" to="/registration">Регистрация</Link>
             </nav>
         </div>
     )

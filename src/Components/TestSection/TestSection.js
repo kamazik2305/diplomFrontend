@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import "./TestSectionStyle.css"
 
 export const TestSection = ({ id, testSectionTitle }) => {
@@ -20,8 +21,8 @@ export const TestSection = ({ id, testSectionTitle }) => {
             <p> {id} </p>
             <p> {testSectionTitle} </p>
             <nav>
-                <a className="section-btn text-decoration-none"
-                    href={`/test-sections/${id}`} > Перейти к разделу</a>
+                <Link className="section-btn text-decoration-none"
+                    to={`/test-sections/${id}`} > Перейти к разделу</Link>
                 <a className="section-btn text-decoration-none">Редактировать</a>
                 <form>
                     <button type="button" className="section-btn text-decoration-none"
