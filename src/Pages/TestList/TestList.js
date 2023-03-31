@@ -2,7 +2,7 @@ import * as React from "react"
 import { useParams } from "react-router";
 import "./TestStyle.css"
 
-export const Test = () =>
+export const TestList = () =>
 {
     const [idSectionTest, setIdSectionTest] = React.useState('');
     const [testName, setTestName] = React.useState('');
